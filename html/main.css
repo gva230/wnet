@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+#notify
+{
+	color:#00f;
+	display:none;
+}
+
+#list
+{
+	display:none;
+}
+
+#error
+{
+	color:#f00;
+}
+
+formset
+{
+	display:block;
+	padding:10px 0;
+}
+
+@media print
+{
+	@page
+	{
+		size:A4;
+		margin:1cm;
+	}
+
+	html, body
+	{
+		background-color:#fff;
+		height:297mm;
+		width:210mm;
+	}
+
+	form, p, ul
+	{
+		display:none !important;
+	}
+}

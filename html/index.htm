@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="author" content="GVA" >
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="http://gva.pp.ua/wnet/html/main.css">
+
+	<script src="http://gva.pp.ua/wnet/html/jquery-2.1.1.min.js"></script>
+	<script src="http://gva.pp.ua/wnet/html/main.js"></script>
+	<title>тестовое задание</title>
+</head>
+<body>
+	<form role="form" name="print" enctype="multipart/form-data" action="" method="post">
+		<label>Поиск: <input type="text" name="search" title="Введте id или название клиента" placeholder="Введте id или название клиента" maxlength="250" required></label>
+		<formset title="Выберите хотя бы один статус сервиса">
+			<legend>Сатус сервиса:</legend>
+			<label><input type="checkbox" name="work"> work</label>
+			<label><input type="checkbox" name="connecting"> connecting</label>
+			<label><input type="checkbox" name="disconnected"> disconnected</label>
+		</formset>
+		<button type="submit" title="Заполните форму" disabled>Показать</button>
+	</form>
+	<p id="error"></p>
+	<p id="list">Выберите договор из списка:</p>
+	<ul></ul>
+	<table>
+		<tr>
+			<td colspan=2><b>информация про клиента</b></td>
+		</tr>
+		<tr>
+			<td>название клиента</td>
+			<td id="name_customer"></td>
+		</tr>
+		<tr>
+			<td>компания</td>
+			<td id="company"></td>
+		</tr>
+		<tr>
+			<td colspan=2><b>информация про договор</b></td>
+		</tr>
+		<tr>
+			<td>номер договора</td>
+			<td id="number"></td>
+		</tr>
+		<tr>
+			<td>дата подписания</td>
+			<td id="date_sign"></td>
+		</tr>
+		<tr>
+			<td colspan=2><b>информация про сервисы</b></td>
+		</tr>
+		<tr>
+			<td colspan=2 id="services_name"></td>
+		</tr>
+	</table>
+	<p id="notify">Чтобы распечатать карточку клиента, нажмите [Ctrl]+[P].</p>
+</body>
+</html>
